@@ -1,6 +1,10 @@
 ## Problem Statement
-This project focuses on performing a **chi-squared** analysis using a file, by determining if the *numbers of cylinders* in a car has a significant correlation with the *type of car sold*. Additionally, two other combinations of categorical variables in the same dataset will be recommended.
+This project focuses on performing a **chi-squared** analysis on a dataset, by determining if the *numbers of cylinders* in a car has a significant correlation with the *type of car sold*. Additionally, two other combinations of categorical variables in the same dataset will be recommended.
 
+## About the Dataset
+The dataset contains 26 independent variables (Continuous and Categorical) including *drivetrain*, *cylinders*, *horsepower*, *airbags*, *weight*, *make*, *min.price*, *max.price* etc.
+
+**Dependent variable**: *Type of car sold*
 ## Hypothesis Statement
 I want to test the hypothesis which states that there is a correlation between the *number of cylinders* and the *the type of car sold*. Basically, I want to know if there is a relationship between them where the outcome of one of the categorical data depends on the other.
 
@@ -23,7 +27,7 @@ row.labels = TRUE
 
 Through this, the following will be obtained
 * The chi-squared test statistic = 78.93491
-+ The degree of freedom, which equals (R-1)*(C-1), where R = row and C = column
++ The degree of freedom, which equals (R-1)x(C-1), where R = row and C = column
 df= 25 (i.e. (6-1)*(6-1))
 - The p-value = 1.67e-07 *which is the risk I am willing to take based on the result of the chi-dquared analysis.*
 
